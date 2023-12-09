@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/movie.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=YourPreferredFont&display=swap">
+</head>
+
+<body>
+    <div id="searchModal" class="modal-dialog modal-lg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="modal-header">
+                    <h4 id="modal-title">Suche</h4>
+                </div>
+                <div id="modal-body">
+                    <input type="text" class="form-control" value="tarzan" id="search" name="search" />
+                    <hr>
+                    <input type="button" class="btn btn-successs" value="Suchen" onclick="getMovieResult()" />
+                    <input type="button" class="btn btn-info" value="Clear ApiKey" onclick="clearApiKey()" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resultModal" class="modal-dialog modal-lg">
+        <div class="modal-dialog">
+            <div id="modal-content">
+                <div id="modal-header2">
+                    <h4 id="modal-title2">Ergebnisse</h4>
+                </div>
+                <div id="modal-body">
+                    <table class="table" id="movieresult">
+                        <thead>
+                            <tr id="td">
+                                <td>Titel </td>
+                                <td> Jahr </td>
+                                <td> Poster </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                    <p class="jason">The content is</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/movie.js"></script>
+</body>
+</html>
