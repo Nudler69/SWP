@@ -10,7 +10,6 @@ function getMovieResult() {
       url: "http://www.omdbapi.com/?s=" + search + "&r=json&apikey=ab4203c7",
       dataType: 'json',
       success: function (data) {
-        var dataAsText = JSON.stringify(data);
         if (data.hasOwnProperty("Response") && data.Response == "True") {
           // Query is successful, doesn't guarantee that data is OK or present
           // data.Search Array of results
@@ -21,6 +20,7 @@ function getMovieResult() {
         alert(textStatus + " " + errorThrown);
       }
     });
+    
   }
  
   function splitJson(myArray) {
