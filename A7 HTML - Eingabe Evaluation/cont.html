@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <script src="file.js"></script>
+    <script src="jquery-3.6.4.slim.min.js"></script>
 </head>
 <body>
     <div class="bs-callout bs-callout-warning hidden">
@@ -44,6 +46,10 @@
 
         <label for="url">Url:</label>
         <input type="url" id="url" name="url" required><br>
+
+        <label for="file">File:</label>
+
+        <input type="file" name="fileInput" id="fileInput" accept=".txt" required>
 
         <label for="week">Week:</label>
         <input type="week" id="week" name="week" required><br>
@@ -114,5 +120,9 @@
         });
       });
       </script>
+
+      <script src="file.js"></script>
+      <script src="jquery-3.6.4.slim.min.js"></script>
+
 </body>
 </html>
